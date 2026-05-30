@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rizwan Ahmad - Network Engineer Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0b1220;
+    color: #e5e7eb;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #0f172a;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #cbd5e1;
+    padding: 10px;
+    margin: 6px 0;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #1e293b;
+    color: #38bdf8;
+}
+
+/* MAIN */
+.main {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(56,189,248,0.2);
+    text-align: center;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(56,189,248,0.6);
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    color: #38bdf8;
+    font-size: 26px;
+}
+
+.info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* CARD */
+.card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(56,189,248,0.25);
+    border-color: #38bdf8;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+ul li {
+    margin: 6px 0;
+    color: #cbd5e1;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill {
+    background: #1e293b;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.skill:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+/* TOPOLOGY */
+.topology {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* COLORS */
+.internet { color:#fbbf24; }
+.firewall { color:#ef4444; }
+.router { color:#38bdf8; }
+.switch { color:#22c55e; }
+.server { color:#a78bfa; }
+.vpn { color:#06b6d4; }
+.telecom { color:#22d3ee; }
+.cctv { color:#f97316; }
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>ENGINEER MENU</h2>
+    <a href="#about"><i class="fa fa-user"></i> About</a>
+    <a href="#skills"><i class="fa fa-gears"></i> Skills</a>
+    <a href="#lan"><i class="fa fa-network-wired"></i> LAN</a>
+    <a href="#routing"><i class="fa fa-route"></i> Routing</a>
+    <a href="#firewall"><i class="fa fa-shield-halved"></i> Firewall</a>
+    <a href="#acl"><i class="fa fa-lock"></i> ACL</a>
+    <a href="#vpn"><i class="fa fa-key"></i> VPN</a>
+    <a href="#telecom"><i class="fa fa-tower-broadcast"></i> Telecom</a>
+    <a href="#cctv"><i class="fa fa-video"></i> CCTV</a>
+    <a href="#topology"><i class="fa fa-diagram-project"></i> Topology</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="header">
+
+    <!-- PROFILE IMAGE -->
+    <img src="Profile.jpg" alt="Profile Photo" class="profile-img">
+
+    <h1>MD RIZWAN AHMAD</h1>
+    <div class="info">
+        Network / Telecom / Security Engineer<br>
+        India | KSA | Kuwait<br>
+        📞 7061414025 | ✉️ mdahmad4192@gmail.com
+    </div>
+</div>
+
+<div class="grid">
+
+<!-- ABOUT -->
+<div class="card">
+<h2><i class="fa fa-user"></i> About</h2>
+<p>10+ years experienced Network Engineer specializing in LAN/WAN, VPN, Firewalls, Telecom, CCTV systems, VMware, Azure and enterprise infrastructure.</p>
+</div>
+
+<!-- SKILLS -->
+<div class="card">
+<h2><i class="fa fa-gears"></i> Skills</h2>
+<div class="skills">
+<div class="skill">LAN/WAN</div>
+<div class="skill">VPN</div>
+<div class="skill">Firewalls</div>
+<div class="skill">ArcSight</div>
+<div class="skill">VMware</div>
+<div class="skill">Azure</div>
+<div class="skill">Linux RHCE</div>
+<div class="skill">Windows Server</div>
+<div class="skill">Cisco</div>
+<div class="skill">VoIP</div>
+</div>
+</div>
+
+<!-- VPN -->
+<div class="card" id="vpn">
+<h2><i class="fa fa-key"></i> VPN Infrastructure</h2>
+<ul>
+<li>S2S VPN – Branch connectivity</li>
+<li>P2S VPN – Remote user access</li>
+<li>P2P VPN – Dedicated tunnels</li>
+<li>CCTV over VPN secure monitoring</li>
+</ul>
+</div>
+
+<!-- TELECOM -->
+<div class="card" id="telecom">
+<h2><i class="fa fa-tower-broadcast"></i> Telecom Systems</h2>
+<ul>
+<li>VoIP / SIP Trunking</li>
+<li>PBX Systems</li>
+<li>Call Routing</li>
+<li>Carrier Integration</li>
+</ul>
+</div>
+
+<!-- CCTV -->
+<div class="card" id="cctv">
+<h2><i class="fa fa-video"></i> CCTV & Security</h2>
+<ul>
+<li>IP CCTV Systems</li>
+<li>NVR / DVR Setup</li>
+<li>Access Control Systems</li>
+<li>Biometric Integration</li>
+</ul>
+</div>
+
+<!-- NETWORK TOPOLOGY -->
+<div class="card" id="topology">
+<h2><i class="fa fa-diagram-project"></i> Network Topology</h2>
+
+<div class="topology">
+🌐 INTERNET CLOUD<br>
+↓<br>
+🔥 FIREWALL (VPN Gateway)<br>
+↓<br>
+📡 CORE ROUTER<br>
+──────────────<br>
+SWITCH ─ SERVER ─ VPN HUB ─ TELECOM SYSTEM<br>
+│ PCs │ VMware │ Remote Users │ VoIP<br>
+↓<br>
+🎥 CCTV SYSTEM (Connected via VPN Secure Tunnel)
+</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
