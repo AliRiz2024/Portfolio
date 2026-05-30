@@ -79,7 +79,6 @@ body {
 
 .header h1 {
     color: #38bdf8;
-    font-size: 26px;
 }
 
 .info {
@@ -174,7 +173,7 @@ ul li {
     <h2>ENGINEER MENU</h2>
     <a href="#about"><i class="fa fa-user"></i> About</a>
     <a href="#skills"><i class="fa fa-gears"></i> Skills</a>
-    <a href="#lan"><i class="fa fa-network-wired"></i> LAN</a>
+    <a href="#lan"><i class="fa fa-network-wired"></i> LAN Switching</a>
     <a href="#routing"><i class="fa fa-route"></i> Routing</a>
     <a href="#firewall"><i class="fa fa-shield-halved"></i> Firewall</a>
     <a href="#acl"><i class="fa fa-lock"></i> ACL</a>
@@ -187,6 +186,7 @@ ul li {
 <!-- MAIN -->
 <div class="main">
 
+<!-- HEADER -->
 <div class="header">
 
     <!-- PROFILE IMAGE -->
@@ -205,7 +205,7 @@ ul li {
 <!-- ABOUT -->
 <div class="card">
 <h2><i class="fa fa-user"></i> About</h2>
-<p>10+ years experienced Network Engineer specializing in LAN/WAN, VPN, Firewalls, Telecom, CCTV systems, VMware, Azure and enterprise infrastructure.</p>
+<p>10+ years experienced Network Engineer specializing in enterprise networking, routing, switching, firewall security, VPN, telecom systems, CCTV infrastructure, VMware and cloud environments.</p>
 </div>
 
 <!-- SKILLS -->
@@ -215,40 +215,86 @@ ul li {
 <div class="skill">LAN/WAN</div>
 <div class="skill">VPN</div>
 <div class="skill">Firewalls</div>
+<div class="skill">Routing</div>
+<div class="skill">Switching</div>
+<div class="skill">ACL</div>
 <div class="skill">ArcSight</div>
 <div class="skill">VMware</div>
 <div class="skill">Azure</div>
 <div class="skill">Linux RHCE</div>
-<div class="skill">Windows Server</div>
 <div class="skill">Cisco</div>
 <div class="skill">VoIP</div>
 </div>
 </div>
 
+<!-- LAN SWITCHING -->
+<div class="card">
+<h2><i class="fa fa-network-wired"></i> LAN Switching</h2>
+<ul>
+<li>VLAN Configuration</li>
+<li>Trunking (802.1Q)</li>
+<li>STP / RSTP</li>
+<li>Port Security</li>
+</ul>
+</div>
+
+<!-- ROUTING -->
+<div class="card">
+<h2><i class="fa fa-route"></i> Routing</h2>
+<ul>
+<li>Static Routing</li>
+<li>OSPF / BGP</li>
+<li>WAN / MPLS Networks</li>
+<li>Inter-VLAN Routing</li>
+</ul>
+</div>
+
+<!-- FIREWALL -->
+<div class="card">
+<h2><i class="fa fa-shield-halved"></i> Firewall</h2>
+<ul>
+<li>Fortinet / Cisco ASA</li>
+<li>NAT / PAT</li>
+<li>Security Policies</li>
+<li>Threat Protection</li>
+</ul>
+</div>
+
+<!-- ACL -->
+<div class="card">
+<h2><i class="fa fa-lock"></i> ACL</h2>
+<ul>
+<li>Standard ACL</li>
+<li>Extended ACL</li>
+<li>Traffic Filtering</li>
+<li>Access Control Rules</li>
+</ul>
+</div>
+
 <!-- VPN -->
-<div class="card" id="vpn">
+<div class="card">
 <h2><i class="fa fa-key"></i> VPN Infrastructure</h2>
 <ul>
-<li>S2S VPN – Branch connectivity</li>
-<li>P2S VPN – Remote user access</li>
-<li>P2P VPN – Dedicated tunnels</li>
-<li>CCTV over VPN secure monitoring</li>
+<li>S2S VPN (Branch Connectivity)</li>
+<li>P2S VPN (Remote Users)</li>
+<li>P2P VPN (Dedicated Links)</li>
+<li>CCTV over VPN Secure Access</li>
 </ul>
 </div>
 
 <!-- TELECOM -->
-<div class="card" id="telecom">
+<div class="card">
 <h2><i class="fa fa-tower-broadcast"></i> Telecom Systems</h2>
 <ul>
 <li>VoIP / SIP Trunking</li>
-<li>PBX Systems</li>
-<li>Call Routing</li>
+<li>PBX Configuration</li>
+<li>Call Routing Systems</li>
 <li>Carrier Integration</li>
 </ul>
 </div>
 
 <!-- CCTV -->
-<div class="card" id="cctv">
+<div class="card">
 <h2><i class="fa fa-video"></i> CCTV & Security</h2>
 <ul>
 <li>IP CCTV Systems</li>
@@ -258,8 +304,8 @@ ul li {
 </ul>
 </div>
 
-<!-- NETWORK TOPOLOGY -->
-<div class="card" id="topology">
+<!-- TOPOLOGY -->
+<div class="card">
 <h2><i class="fa fa-diagram-project"></i> Network Topology</h2>
 
 <div class="topology">
@@ -272,7 +318,7 @@ ul li {
 SWITCH ─ SERVER ─ VPN HUB ─ TELECOM SYSTEM<br>
 │ PCs │ VMware │ Remote Users │ VoIP<br>
 ↓<br>
-🎥 CCTV SYSTEM (Connected via VPN Secure Tunnel)
+🎥 CCTV SYSTEM (Secure VPN Access)
 </div>
 
 </div>
