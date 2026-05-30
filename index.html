@@ -90,7 +90,6 @@ body {
     border-radius: 12px;
     border: 1px solid #1f2937;
     transition: 0.4s;
-    overflow: hidden;
 }
 
 .card:hover {
@@ -141,7 +140,6 @@ ul li {
     font-family: monospace;
     font-size: 13px;
     line-height: 1.7;
-    color: #cbd5e1;
 }
 
 /* COLORS */
@@ -151,6 +149,7 @@ ul li {
 .switch { color:#22c55e; }
 .server { color:#a78bfa; }
 .vpn { color:#06b6d4; }
+.telecom { color:#22d3ee; }
 .cctv { color:#f97316; }
 
 </style>
@@ -168,6 +167,8 @@ ul li {
     <a href="#firewall"><i class="fa fa-shield-halved"></i> Firewall</a>
     <a href="#acl"><i class="fa fa-lock"></i> ACL</a>
     <a href="#vpn"><i class="fa fa-key"></i> VPN</a>
+    <a href="#telecom"><i class="fa fa-tower-broadcast"></i> Telecom</a>
+    <a href="#cctv"><i class="fa fa-video"></i> CCTV</a>
     <a href="#topology"><i class="fa fa-diagram-project"></i> Topology</a>
 </div>
 
@@ -187,7 +188,7 @@ ul li {
 <!-- ABOUT -->
 <div class="card" id="about">
 <h2><i class="fa fa-user"></i> About</h2>
-<p>10+ years experience in enterprise networking, telecom systems, cybersecurity, VMware, Azure and Linux infrastructure across India and Gulf countries.</p>
+<p>10+ years experienced Network Engineer in enterprise networking, telecom systems, CCTV security, VPN infrastructure, VMware, Azure, Linux and firewall environments.</p>
 </div>
 
 <!-- SKILLS -->
@@ -212,7 +213,7 @@ ul li {
 <h2><i class="fa fa-network-wired"></i> LAN Switching</h2>
 <ul>
 <li>VLAN & Trunking (802.1Q)</li>
-<li>STP / RSTP Loop Prevention</li>
+<li>STP / RSTP</li>
 <li>Switch Security</li>
 </ul>
 </div>
@@ -223,7 +224,7 @@ ul li {
 <ul>
 <li>Static & Dynamic Routing</li>
 <li>OSPF / BGP</li>
-<li>WAN / MPLS Networks</li>
+<li>MPLS / WAN Networks</li>
 </ul>
 </div>
 
@@ -243,7 +244,7 @@ ul li {
 <ul>
 <li>Standard / Extended ACL</li>
 <li>Traffic Filtering</li>
-<li>IP Security Rules</li>
+<li>Access Restrictions</li>
 </ul>
 </div>
 
@@ -251,11 +252,32 @@ ul li {
 <div class="card" id="vpn">
 <h2><i class="fa fa-key"></i> VPN Infrastructure</h2>
 <ul>
-<li><span class="vpn">S2S VPN</span> – Branch connectivity</li>
-<li><span class="vpn">P2S VPN</span> – Remote user access</li>
-<li><span class="vpn">P2P VPN</span> – Dedicated secure tunnels</li>
-<li>IPSec / SSL VPN Security</li>
-<li>CCTV over VPN (Remote monitoring)</li>
+<li>S2S VPN – Branch Connectivity</li>
+<li>P2S VPN – Remote Users</li>
+<li>P2P VPN – Dedicated Links</li>
+<li>CCTV over VPN Secure Access</li>
+</ul>
+</div>
+
+<!-- TELECOM -->
+<div class="card" id="telecom">
+<h2><i class="fa fa-tower-broadcast"></i> Telecom Systems</h2>
+<ul>
+<li>VoIP / SIP Trunking</li>
+<li>PBX Configuration</li>
+<li>Call Routing</li>
+<li>Carrier Integration</li>
+</ul>
+</div>
+
+<!-- CCTV -->
+<div class="card" id="cctv">
+<h2><i class="fa fa-video"></i> CCTV & Security</h2>
+<ul>
+<li>IP CCTV Systems</li>
+<li>NVR / DVR Setup</li>
+<li>Access Control Systems</li>
+<li>Biometric Integration</li>
 </ul>
 </div>
 
@@ -264,16 +286,16 @@ ul li {
 <h2><i class="fa fa-diagram-project"></i> Network Topology</h2>
 
 <div class="topology">
-<span class="internet">🌐 INTERNET CLOUD</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
-<span class="firewall">🔥 FIREWALL (VPN Gateway)</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
-<span class="router">📡 CORE ROUTER</span><br>
+🌐 INTERNET CLOUD<br>
+↓<br>
+🔥 FIREWALL (VPN Gateway)<br>
+↓<br>
+📡 CORE ROUTER<br>
 ──────────────<br>
-<span class="switch">SWITCH LAN</span> ─ <span class="server">DATA CENTER</span> ─ <span class="vpn">VPN HUB</span><br>
-│ PC USERS │ VMware │ Remote Users<br>
-&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
-<span class="cctv">🎥 CCTV SYSTEM (IP Cameras + NVR over VPN)</span>
+SWITCH ─ SERVER ─ VPN HUB ─ TELECOM<br>
+│ PC │ VMware │ Remote Users │ VoIP<br>
+↓<br>
+🎥 CCTV SYSTEM (Over VPN Secure Tunnel)
 </div>
 
 </div>
