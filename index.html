@@ -74,7 +74,7 @@ body {
     border: 4px solid #38bdf8;
     object-fit: cover;
     box-shadow: 0 0 25px rgba(56,189,248,0.6);
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .header h1 {
@@ -122,6 +122,21 @@ ul {
 ul li {
     margin: 6px 0;
     color: #cbd5e1;
+}
+
+.profile-wrapper {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url("./network-bg.jpg") center/cover no-repeat;
+    position: relative;
+
+    box-shadow: 0 0 25px rgba(56,189,248,0.4);
 }
 
 /* SKILLS */
@@ -191,8 +206,9 @@ ul li {
 <div class="header">
 
     <!-- PROFILE IMAGE -->
+    <div class="profile-wrapper">
     <img src="./Profile.jpg" alt="Profile Photo" class="profile-img">
-
+</div>
     <h1>MD RIZWAN AHMAD</h1>
     <div class="info">
         Network / Telecom / Security Engineer<br>
